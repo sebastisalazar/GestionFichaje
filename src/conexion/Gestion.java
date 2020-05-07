@@ -41,7 +41,7 @@ public class Gestion {
 				
 			} else {//si ya existe suma los minutos
 				
-				int minutos = conexion.getHorasConexion();
+				
 				int key = listadoSinDuplicados.get(conexion.getNombreAlumno());
 				listadoSinDuplicados.put(conexion.getNombreAlumno(), key + conexion.getHorasConexion());
 			}

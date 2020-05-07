@@ -1,6 +1,7 @@
 package conexion;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 
@@ -10,8 +11,8 @@ public class CargaLista {
 		ArrayList<Conexion> listaDeConexiones = new ArrayList<Conexion>();
 		try {
 			BufferedReader br;
-			String f = "bin/conexion/tiemposConexion.csv";
-			FileReader fr = new FileReader(f);
+			File f = new File("tiemposConexion.csv");
+			FileReader fr = new FileReader(f.getAbsolutePath());
 			br = new BufferedReader(fr);
 			
 			String linea;

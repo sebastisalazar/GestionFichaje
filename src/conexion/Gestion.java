@@ -14,7 +14,7 @@ public class Gestion {
 
 	public static void main(String[] args) {
 
-		listadoConDuplicados = CargaLista.getLista();
+		listadoConDuplicados = CargaListaConexion.getLista();
 		System.out.println("\n*************************");
 		System.out.println("\n\tLISTA CON DUPLICADOS\n");
 		imprimirLista();
@@ -31,6 +31,7 @@ public class Gestion {
 	}
 
 	static void duplicados() {
+		
 
 		for (Conexion conexion : listadoConDuplicados) {// bucle para leer el listadoConDuplicados
 
